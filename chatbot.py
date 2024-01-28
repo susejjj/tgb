@@ -39,11 +39,6 @@ def func(message):
     leg.send_message(message.chat.id, 'хахахахах, я шучу\n[физику любить надо, это база🧠](https://www.youtube.com/watch?v=R15JBUgkVqQ)', parse_mode='MarkdownV2')
 
 
-@leg.message_handler(commands=['hohoho', 'susej', 'furry'])
-def func(message):
-    leg.send_message(message.chat.id, 'ого, да *ты* хитрый\n_Откуда команду взял?🫣🫣🫣_\n*фуррифуррифурри*', parse_mode='MarkdownV2')
-
-
 @leg.message_handler(commands=['end'])
 def func(message):
     leg.send_message(message.chat.id, f'спасибо за уделенное время, но не могу же я оставить тебя без сюрприза. ведь так?\nа вот и он 🍒{message.from_user.id}🍒\nтеперь я знаю о тебе всеее😈')
